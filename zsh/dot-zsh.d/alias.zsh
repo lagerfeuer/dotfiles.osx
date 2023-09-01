@@ -1,11 +1,12 @@
-alias cat="bat"
-alias ls="exa"
+alias cat='bat'
+alias ls='exa'
+alias vim='nvim'
 
 # alias grep='rg'
 # alias find='fd'
 
 alias readme='glow -p README.md'
 
-# Git
+# git
 alias gdc='git diff --cached'
 
