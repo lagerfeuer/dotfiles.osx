@@ -1,5 +1,5 @@
 alias cat='bat'
-alias ls='exa'
+alias ls='eza'
 alias vim='nvim'
 
 # alias grep='rg'
