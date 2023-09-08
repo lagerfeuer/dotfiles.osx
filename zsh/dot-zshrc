@@ -21,6 +21,8 @@ antigen bundle aws
 antigen bundle dash
 antigen bundle git
 antigen bundle command-not-found
+antigen bundle docker
+antigen bundle docker-compose
 NVM_HOMEBREW="$(brew --prefix nvm)"
 antigen bundle nvm
 antigen bundle rbenv
