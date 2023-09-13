@@ -9,6 +9,7 @@ brew install antigen grep jq stow tmux neovim \
 git clone git@github.com:lagerfeuer/dotfiles.osx.git ~/dotfiles
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-# TODO: vim plugin manager
 ```
+
+See https://nvchad.com/ for a "batteries included" `nvim` installation.
+
