@@ -11,3 +11,5 @@ alias readme='glow -p README.md'
 # git
 alias gdc='git diff --cached'
 
+export EDITOR=vim
+
