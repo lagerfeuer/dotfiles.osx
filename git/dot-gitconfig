@@ -1,10 +1,46 @@
 [init]
 	templateDir = /Users/lukasdeutz/.git-template
+	defaultBranch = main
 
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+
 [interactive]
 	diffFilter = diff-so-fancy --patch
+
 [user]
 	name = Lukas Deutz
 	email = lukas.deutz@nationbuilder.com
+
+[includeIf "gitdir:~/Private/"]
+  path = ~/.gitconfig.private
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[alias]
+  a = add 
+  c = commit
+  st = status
+  co = checkout
+  up = pull 
+  fa = fetch --all
+  p = push
+  pt = push --tags
+  diffc = diff --cached
+  stat = diff --stat
+	staash = stash --all
+
+  lg = log --all --decorate --oneline --graph
+  lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
+[maintenance]
+	repo = /Users/lukasdeutz/Work/nbuild
+
+[grep]
+  lineNumber = true
+
