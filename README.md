@@ -9,6 +9,8 @@ brew install antigen grep jq stow tmux neovim \
 git clone git@github.com:lagerfeuer/dotfiles.osx.git ~/dotfiles
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# Open tmux and press `<prefix> + Shift + i` to install plugins from `~/.tmux.conf`.
+# Use `<prefix> + Shift + u` to update plugins. 
 
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
